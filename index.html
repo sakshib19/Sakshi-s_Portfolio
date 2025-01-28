@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: Poppins, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 30px;
+            background-color: rgb(18, 18, 62);
+            padding: 1rem 10rem;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.2rem;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.4px;
+            margin: 40px 84px 10px 84px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0.5rem 5rem 2rem 3rem;
+        }
+
+        .social-icons a {
+            color: white;
+            margin-right: 1.5rem;
+            font-size: 1.2rem;
+        }
+        .social-icons a:hover {
+            color: rgb(153, 153, 226);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+        .leftSection .btn{
+            padding: 10px;
+            background: #454784;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .rightSection {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sakshi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Education</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Sakshi</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/11OSTq8alfC1-eoLgEGjg1MdW57WkvhKz/view?usp=sharing" target="_blank">
+                        <button class="btn">Download Resume </button>
+                    </a>
+                    <a href="https://github.com/sakshib19" target="_blank">
+                        <button class="btn">Visit Github</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+
+                <img src="pohto.jpg" alt="style" width="500" height="350">
+
+            </div>
+        </section>
+        <hr>
+        <div class="social-icons">
+            <a href="https://github.com/sakshib19" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="http://www.linkedin.com/in/sakshib19" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:sakshibihani.nitr@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://leetcode.com/u/Sakshiusb/" target="_blank"><i class="fas fa-code"></i></a>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer','Technologist', 'Reader', 'Debater'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
